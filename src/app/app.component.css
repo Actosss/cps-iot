@@ -1,0 +1,9 @@
+.navbar {
+  background-color: #394264;
+  font-family: "Ubuntu", sans-serif;
+}
+.nav-item a,
+.navbar-brand {
+  color: aliceblue;
+  font-family: "Ubuntu", sans-serif;
+}

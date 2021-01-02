@@ -1,5 +1,5 @@
 <div id="app">
-  <nav class="navbar navbar-expand navbar-dark bg-primary">
+  <nav class="navbar navbar-expand">
     <a href="#" class="navbar-brand">CPS</a>
     <ul class="navbar-nav mr-auto" routerLinkActive="active">
       <li class="nav-item">
@@ -12,7 +12,7 @@
         <a href="/mod" class="nav-link" routerLink="mod">Moderator Board</a>
       </li>
       <li class="nav-item">
-        <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
+        <a href="/food" class="nav-link" *ngIf="isLoggedIn" routerLink="food">Food</a>
       </li>
     </ul>
 
@@ -30,7 +30,7 @@
         <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
       </li>
       <li class="nav-item">
-        <a href class="nav-link" (click)="logout()">LogOut</a>
+        <a href class="nav-link" (click)="logout()">Log Out</a>
       </li>
     </ul>
   </nav>

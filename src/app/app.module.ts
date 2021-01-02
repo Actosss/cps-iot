@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
-import { BoardUserComponent } from './board-user/board-user.component';
+import { BoardFoodComponent } from './board-food/board-food.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -61,7 +61,7 @@ import { FoodFilterPipe } from '../app/pipes/food-filter-pipe';
     ProfileComponent,
     BoardAdminComponent,
     BoardModeratorComponent,
-    BoardUserComponent,
+    BoardFoodComponent,
     FoodFilterPipe,
   ],
   imports: [
