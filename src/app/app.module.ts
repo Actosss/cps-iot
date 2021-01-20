@@ -27,6 +27,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatDialogModule } from '@angular/material/dialog';
+
 // Material Navigation
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -51,6 +53,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { FoodFilterPipe } from '../app/pipes/food-filter-pipe';
+import { DialogComponent } from './board-admin/dialog/dialog.component';
+import { AdminDialogComponent } from './board-admin/admin-dialog-update/admin-dialog.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +67,8 @@ import { FoodFilterPipe } from '../app/pipes/food-filter-pipe';
     BoardModeratorComponent,
     BoardFoodComponent,
     FoodFilterPipe,
+    DialogComponent,
+    AdminDialogComponent,
   ],
   imports: [
     MatPaginatorModule,
@@ -102,6 +108,7 @@ import { FoodFilterPipe } from '../app/pipes/food-filter-pipe';
     MatDividerModule,
     MatSlideToggleModule,
     MatListModule,
+    MatDialogModule,
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent],

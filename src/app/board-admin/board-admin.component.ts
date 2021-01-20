@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TokenStorageService } from '../_services/token-storage.service';
 import { UserService } from '../_services/user.service';
 
 @Component({
@@ -8,8 +9,11 @@ import { UserService } from '../_services/user.service';
 })
 export class BoardAdminComponent implements OnInit {
   content?: string;
-
-  constructor(private userService: UserService) {}
+  username?: string;
+  constructor(
+    private userService: UserService,
+    private tokenStorageService: TokenStorageService
+  ) {}
 
   ngOnInit(): void {
     this.userService.getAdminBoard().subscribe(
@@ -20,5 +24,7 @@ export class BoardAdminComponent implements OnInit {
         this.content = JSON.parse(err.error).message;
       }
     );
+    const user = this.tokenStorageService.getUser();
+    this.username = user.username;
   }
 }

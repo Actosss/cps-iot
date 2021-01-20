@@ -8,6 +8,7 @@ import { Food } from './food';
 })
 export class FoodService implements OnInit {
   private jsonFileURL = 'http://localhost:8080/api/images/allfood';
+  private jsonFileURLTag = 'http://localhost:8080/api/images/';
   constructor(private httpClient: HttpClient) {}
   ngOnInit(): void {
     throw new Error('Method not implemented.');
@@ -18,5 +19,14 @@ export class FoodService implements OnInit {
 
   getFood(): Observable<Food[]> {
     return this.httpClient.get<Food[]>(this.jsonFileURL);
+  }
+  deleteFood(id: string) {
+    return this.httpClient.delete<Food>(this.jsonFileURL + id);
+  }
+  getFoodByID(id: string) {
+    return this.httpClient.delete<Food>(this.jsonFileURL + id);
+  }
+  getFoodsByTag(tag: string) {
+    return this.httpClient.get<Food>(this.jsonFileURLTag + tag + '/foods');
   }
 }
