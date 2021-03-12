@@ -1,0 +1,48 @@
+.example-card {
+  max-width: 550px;
+  margin: 10px;
+}
+.example-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.example-header-image {
+  background-size: cover;
+}
+.main-container {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+.example-card {
+  min-width: 450px;
+}
+.card-subtitle {
+  max-width: 400px;
+}
+.mat-form-field {
+  font-size: 14px;
+  min-width: 350px;
+  margin-left: 12px;
+}
+.add-btn {
+  margin-left: 30px;
+}
+img,
+.card {
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.add-btn {
+  background-color: #394264;
+  color: #f3f3f3;
+}
+.btn-secondary {
+  margin: 10px;
+}
+.buttons {
+  display: inline-block;
+  margin: 5px;
+}
